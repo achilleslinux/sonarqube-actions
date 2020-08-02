@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@master
+      uses: achilleslinux/sonarqube-action@master
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
@@ -33,7 +33,7 @@ jobs:
 You can change the analysis base directory and/ project key _(allowed characters: letters, numbers, -, \_, . and :, with at least one non-digit.)_ by using the optional input like this:
 
 ```yaml
-uses: kitabisa/sonarqube-action@master
+uses: achilleslinux/sonarqube-action@master
 with:
   projectBaseDir: my-custom-directory
   projectKey: my-custom-project
