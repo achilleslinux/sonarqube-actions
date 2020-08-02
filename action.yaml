@@ -1,4 +1,4 @@
-name: "SonarQube Scan"
+name: "SonarQube Actions"
 description: "Scan your code with SonarQube Scanner to detect bugs, vulnerabilities and code smells in more than 25 programming languages."
 author: "Avinash Kumar"
 branding:
