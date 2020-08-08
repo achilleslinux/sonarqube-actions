@@ -14,7 +14,7 @@ SonarQube is an open-source platform developed by SonarSource for continuous ins
 
 ## Usage
 
-The workflow, usually declared in `.github/workflows/build.yml`, looks like:
+The workflow, usually declared in `.github/workflows/main.yml`, looks like:
 
 ```yaml
 on: push
