@@ -53,4 +53,4 @@ You can set all variable in the "Secrets" settings page of your repository.
 
 The Dockerfile and associated scripts and documentation in this project are released under the MIT License.
 
-**_Container images built with this project include third party materials._**
+**_Container images built with this project include third party components._**
