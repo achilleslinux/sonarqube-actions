@@ -17,7 +17,7 @@ sonar-scanner \
 	-Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
 	-Dsonar.projectKey=${INPUT_PROJECTKEY} \
 	-Dsonar.projectName=${INPUT_PROJECTNAME} \
-	-Dsonar.projectDescription=${INPUT_PROJECTDESCRIPTION} \
+	-Dsonar.projectDescription='${INPUT_PROJECTDESCRIPTION}' \
 	-Dsonar.links.homepage=${INPUT_HOMEPAGE} \
 	-Dsonar.links.ci=${INPUT_CI} \
 	-Dsonar.links.issue=${INPUT_ISSUE} \
