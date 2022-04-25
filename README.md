@@ -30,15 +30,22 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
+        projectKey: test-cloud
+
 ```
 
-You can change the analysis base directory and/ project key _(allowed characters: letters, numbers, -, \_, . and :, with at least one non-digit.)_ by using the optional input like this:
+Optional inputs:
 
 ```yaml
 uses: achilleslinux/sonarqube-action@master
 with:
   projectBaseDir: my-custom-directory
-  projectKey: my-custom-project
+  projectName: test-cloud
+  projectDescription: "test Cloud - Next-gen software project."
+  homepage: https://github.com/test
+  ci: https://github.com/BAUCAMERA/test-cloud/actions
+  issue: https://github.com/BAUCAMERA/test-cloud/issues
+  scm: https://github.com/BAUCAMERA/test-cloud
 ```
 
 ## Secrets

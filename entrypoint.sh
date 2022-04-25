@@ -15,6 +15,13 @@ fi
 sonar-scanner \
 	-Dsonar.host.url=${INPUT_HOST} \
 	-Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
+	-Dsonar.projectKey=${INPUT_PROJECTKEY} \
+	-Dsonar.projectName=${INPUT_PROJECTNAME} \
+	-Dsonar.projectDescription='${INPUT_PROJECTDESCRIPTION}' \
+	-Dsonar.links.homepage=${INPUT_HOMEPAGE} \
+	-Dsonar.links.ci=${INPUT_CI} \
+	-Dsonar.links.issue=${INPUT_ISSUE} \
+	-Dsonar.links.scm=${INPUT_SCM} \
 	-Dsonar.login=${INPUT_LOGIN} \
 	-Dsonar.password=${INPUT_PASSWORD} \
 	-Dsonar.sources=. \
